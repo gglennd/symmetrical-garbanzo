@@ -1,11 +1,12 @@
 {
   "name": "symmetrical-garbanzo",
-  "version": "0.0.1",
   "type": "module",
+  "version": "0.0.1",
   "scripts": {
     "dev": "vite",
     "generate": "drizzle-kit generate",
-    "migrate": "drizzle-kit migrate"
+    "migrate": "drizzle-kit migrate",
+    "lint": "eslint --fix"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.2.3",
@@ -28,10 +29,13 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^4.16.1",
     "@types/node": "^24.0.7",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
     "drizzle-kit": "^0.31.4",
+    "eslint": "^9.29.0",
+    "eslint-plugin-format": "^1.0.1",
     "typescript": "^5.8.3",
     "vite": "^7.0.0",
     "vite-tsconfig-paths": "^5.1.4"
